@@ -2,39 +2,39 @@
 // Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
 // Stampare a schermo oppure in console la bici con peso minore.
 
-const bicicletta = [
-    {
-        nome :  "Gian tcr advanced",
-        peso : 6.4
-    },
-    {
-        nome : "Specialized S-Works Tarmac ",
-        peso : 6.6
-    },
-    {
-        nome : "Bianchi Specialissima RC",
-        peso : 6.7
-    },
-    {
-        nome : "BMC TeamMachine SLR 01",
-        peso : 6.9
-    },
-    {
-        nome : "Scott Foil RC Ultimate",
-        peso : 7.2
-    }
-]
- let biciPeso = bicicletta[0];
+// const bicicletta = [
+//     {
+//         nome :  "Gian tcr advanced",
+//         peso : 6.4
+//     },
+//     {
+//         nome : "Specialized S-Works Tarmac ",
+//         peso : 6.6
+//     },
+//     {
+//         nome : "Bianchi Specialissima RC",
+//         peso : 6.7
+//     },
+//     {
+//         nome : "BMC TeamMachine SLR 01",
+//         peso : 6.9
+//     },
+//     {
+//         nome : "Scott Foil RC Ultimate",
+//         peso : 7.2
+//     }
+// ]
+//  let biciPeso = bicicletta[0];
 
-for (let i = 1; i < bicicletta.length; i++){
-   if (bicicletta[i].peso > biciPeso.peso ){
+// for (let i = 1; i < bicicletta.length; i++){
+//    if (bicicletta[i].peso > biciPeso.peso ){
     
-    biciPeso = bicicletta[i];
-   }
+//     biciPeso = bicicletta[i];
+//    }
 
-}
+// }
 
-console.log(biciPeso.peso)
+// console.log(biciPeso.peso)
 
 // Snack2
 // Creare un array di oggetti di squadre di calcio.
@@ -43,3 +43,47 @@ console.log(biciPeso.peso)
 // Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
 // Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
+
+const clubDati =[
+{
+    nome : "Juventus" , 
+    punti : 0, 
+    falli : 0
+},
+{
+    nome: "Inter", 
+    punti : 0,
+    falli : 0
+},
+{
+    nome : "Milan" ,
+    punti:0,
+    falli:0
+},
+{
+    nome : "Napoli", 
+    punti :0, 
+    falli :0
+},
+{
+    nome : "Roma", 
+    punti : 0,
+    falli : 0
+},
+{
+    nome : "Lazio", 
+    punti : 0, 
+    falli : 0
+}
+]
+
+
+for (let i = 0; i < clubDati.length; i++){
+   const curClubDati = clubDati[i]
+    
+
+    curClubDati.punti = Math.floor(Math.random() * 10) + 1;
+    curClubDati.falli = Math.floor(Math.random() * 10) + 1;
+    console.log(curClubDati)
+   
+}
